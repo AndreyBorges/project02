@@ -1,0 +1,56 @@
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+}
+
+label{
+  display: block;
+  margin: 30px 0 10px 0;
+}
+
+input{
+  font-size: 1.2rem;
+  padding: 10px; 
+  display: block;
+}
+
+button{
+  display: block;
+  margin-top: 30px;
+}
+
+.c, .r{
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 10px;
+  align-items: center;
+}
+
+.c label , .r label{
+  margin: 0;
+}
+
+.c input, .r input{
+  margin: 0;
+}
+
+select{
+  font-size: 1.2rem;
+  padding: 10px;
+}
+
+textarea{
+  font-size: 1.2rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+button{
+  font-size: 2rem;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background: red;
+  color: green;
+}

@@ -1,0 +1,9 @@
+:root{
+  --green: #84e ;
+}
+
+
+img{
+  display: block;
+  fill: var(--green);
+}

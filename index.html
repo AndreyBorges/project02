@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Teu cu</title>
+</head>
+<body>
+  
+  <form action="">
+    <label for="name">Nome</label>
+    <input type="text" id="name" name="name">
+
+    <label for="senha">Senha</label>
+    <input type="password" id="senha" name="password">
+    
+    /*required-serve-para-obrigar-a-escrita.*/
+
+    <label for="email">email</label>
+    <input type="email" id="email" name="email" required >
+
+    <label for="idade">idade</label>
+    <input type="number" id="idade" name="idade" required>
+
+    /* Nem todos os navegadores suportão esta função. */
+
+    <label for="saida">Saida do hotel</label>
+    <input type="date" id="saida" name="saida" required>
+
+    /* O checkbox serve para acidicionar e aceitar condições. */
+
+    <div class="c">
+      <input type="checkbox" name="termos" value="aceito">
+      <label for="termos">Aceito os termos de condições da empresa.</label>
+      <input type="checkbox" name="anuncios" value="aceito">
+      <label for="anuncios">Aceito receber anuncios.</label>
+    </div>
+
+    /* O radio permite que só uma opção seja marcada, contanto que tenham o mesmo name"". */
+
+    <div class="r">
+      <input type="radio" id="retirada" name="tipo-de-entrega">
+      <label for="retirada">Retirada no local.</label>
+    </div>
+
+    <div class="r">
+      <input type="radio" id="entrega" name="tipo-de-entrega">
+      <label for="entrega">Entrega em casa.</label>
+    </div>
+
+    /*select precisa de um option dentro dele, para adicionar os valores que forem pedidos.*/
+    <label for="parcelas"></label>
+    <select name="parcelas" id="parcelas">
+      <option value="1x">1x de R$200</option>
+      <option value="2x">2x de R$100</option>
+      <option value="4x">4x de R$50</option>
+    </select>
+
+    /*Columns não é utilizado rows irá mostrar quantas linhas irá aparecer, porem pode se mudar isso com heigth no css, porem o ideal é manter as em numeros de rows, precisa mudar a font-family no css*/
+
+    <label for="mensagem"></label>
+    <textarea name="mensagem" id="mensagem" rows="5"></textarea>
+
+    /* Serve para enviar os parametros acima*/
+    <button>Enviar</button>
+  </form>
+
+</body>
+</html>
